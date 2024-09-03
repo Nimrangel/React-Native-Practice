@@ -33,7 +33,7 @@ export default function HomeScreen({navigation}) {
 
   const renderItem = ({ item }) => (
     <SafeAreaView style={homeStyle.homeItemContainer}>
-      <Pressable onPress={()=> navigation.navigate('Detail', {pokemonName:item.name})}>
+      <Pressable onPress={()=> navigation.navigate('Detail', {pokemonName:item.name, pokemonURL:item.url})}>
         <Text style={homeStyle.homeText}>{item.name}</Text>
       </Pressable>
     </SafeAreaView>

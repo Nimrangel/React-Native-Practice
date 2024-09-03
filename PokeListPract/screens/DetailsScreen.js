@@ -1,7 +1,7 @@
 import { View,Text, StyleSheet } from "react-native";
 
 export default function DetailsScreen({route}){
-    const {pokemonName} = route.params
+    const {pokemonName, pokemonURL} = route.params
     return(
         <View style={detailStyle.detailContainer}>
             <Text style={detailStyle.detailText}>{pokemonName}</Text>
